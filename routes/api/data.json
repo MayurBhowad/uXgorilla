@@ -1,0 +1,14 @@
+[
+    {
+        "username": "test",
+        "lname": "somename",
+        "fname": "somename",
+        "password": "$2a$10$L4gmN8/Vb70leHt6tGwB7epkitBl.8lBn81Gv0zcWOUNiK5E9HAU."
+    },
+    {
+        "username": "mayur",
+        "lname": "Bhowad",
+        "fname": "Mayur",
+        "password": "$2a$10$Ww51eDWgzEg0vFacJS7Zj.0AnKFZF5SXKoOFN16mRXGXErFrWGoRG"
+    }
+]

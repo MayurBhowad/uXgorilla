@@ -1,0 +1,20 @@
+name: Deploying Ux Gorilla
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: deploying to heroku
+        id: deploy
+        uses: akhileshns/heroku-deploy@v3.6.8
+
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "uxgorilla01"
+          heroku_email: "mayurbhowad10924@gmail.com"

@@ -13,7 +13,7 @@ module.exports = passport => {
         console.log(path.join(__dirname, '../routes/api'));
         fs.readFile(`${__dirname}/../routes/api/data.json`, async function (err, data) {
             const users = JSON.parse(data);
-            userFound(users, jwt_payload).then(user => {
+            foundUser(users, jwt_payload).then(user => {
                 if (user) {
                     return done(null, user)
                 }
@@ -23,7 +23,7 @@ module.exports = passport => {
     }));
 }
 
-function userFound(json, thisUser) {
+function foundUser(json, thisUser) {
     return new Promise((resolve, reject) => {
         let user = []
         json.map((item, i) => {
